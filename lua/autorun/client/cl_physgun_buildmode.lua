@@ -232,7 +232,7 @@ local function OnPopulateToolPanel( Panel )
 end
 
 local function Build_ToolMenu()
-	spawnmenu.AddToolMenuOption( "Utilities", "User", "PhysgunSettings", "Physgun Build Mode", "", "", OnPopulateToolPanel, {SwitchConVar = 'physgun_buildmode_enabled'} )
+	spawnmenu.AddToolMenuOption( "Utilities", "User", "PhysgunBuildModeSettings", "Physgun Build Mode", "", "", OnPopulateToolPanel, {SwitchConVar = 'physgun_buildmode_enabled'} )
 end
 
 hook.Add( "PopulateToolMenu", "phys_buildmode_menu", Build_ToolMenu )
